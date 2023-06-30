@@ -172,3 +172,8 @@ LOGGING = {
         },
     }
 }
+
+# 静的ファイルの場所を設定
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
