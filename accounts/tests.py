@@ -1,12 +1,13 @@
 from django.test import LiveServerTestCase
 from django.urls import reverse_lazy
-from selenium.webdriver.chrome.webdriver import WebDriver
+# from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium import webdriver
 
 class TestLogin(LiveServerTestCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.selenium = WebDriver(executable_path='/Users/d_watanabe/Downloads/chromedriver_mac64/chromedriver')
+        cls.selenium = webdriver.Chrome(executable_path='/Users/d_watanabe/Downloads/chromedriver_mac64/chromedriver')
 
     def test_login(self):
         # ログインページを開く
