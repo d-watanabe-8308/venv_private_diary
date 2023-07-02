@@ -1,4 +1,3 @@
-import os
 from .settings_common import *
 
 # 本番環境用にセキュリティキーを生成し環境変数から読み込む
