@@ -132,9 +132,9 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # 静的ファイルの場所を設定
-STATICFILES_DIRS = (
+'''STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-)
+)'''
 
 # メッセージタグを追加
 MESSAGE_TAGS = {
