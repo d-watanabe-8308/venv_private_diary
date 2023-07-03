@@ -11,7 +11,7 @@ ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOSTS')]
 
 # 静的ファイルを配置する場所
 STATIC_ROOT = '/home/app_admin/usr/share/nginx/html/static'
-MEDIA_ROOT = '/home/app_admin/usr/share/nginx/media'
+MEDIA_ROOT = '/home/app_admin/usr/share/nginx/html/media'
 
 # Amazon SES関連設定
 AWS_SES_ACCESS_KEY_ID = os.environ.get('AWS_SES_ACCESS_KEY_ID')
